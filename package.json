@@ -34,7 +34,7 @@
       "last 1 safari version"
     ]
   },
-  "resolutions": {
+  "overrides": {
     "eslint": "8.27.0",
     "eslint-plugin-react": "7.31.11"
   }
