@@ -1,11 +1,11 @@
 import './index.css'
 import './App.css'
 import Navbar from './Navbar'
-import About from './about/About.js'
-import Beyond from './beyond/Beyond.js'
-import Experience from './experience/Experience.js'
-import Home from './home/Home.js'
-import Projects from './projects/Projects.js'
+import About from './About/About.js'
+import Beyond from './Beyond/Beyond.js'
+import Experience from './Experience/Experience.js'
+import Home from './Home/Home.js'
+import Projects from './Projects/Projects.js'
 import {Route, Routes} from 'react-router-dom'
 
 export default function App() {
