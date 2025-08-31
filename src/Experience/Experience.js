@@ -1,9 +1,11 @@
+import styles from './Experience.module.css'
+
 export default function Experience () {
     return (
         <>
-            <div className = "pageContainer">
-                <p className = "tile">Experience</p>
-                <p className = "text">hello welcome to my experience fr</p>
+            <div className = {styles.pageContainer}>
+                <p className = {styles.title}>Experience</p>
+                <p className = {styles.text}>hello welcome to my experience fr</p>
             </div>
         </>
     )
