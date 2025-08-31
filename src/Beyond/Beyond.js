@@ -1,4 +1,4 @@
-import styles from './Beyond.modules.css';
+import styles from './Beyond.modules.css'
 
 export default function Beyond () {
     return (
