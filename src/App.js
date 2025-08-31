@@ -8,7 +8,7 @@ import Home from './Home/Home.js'
 import Projects from './Projects/Projects.js'
 import {Route, Routes} from 'react-router-dom'
 
-export default function App() {
+function App() {
   return (
     <>
       <Navbar />
@@ -24,6 +24,8 @@ export default function App() {
     </>
   );
 }
+
+export default App;
 
 // Well I was there on the day<br  />
 //           They sold the cause for the queen<br  />
