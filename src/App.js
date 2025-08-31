@@ -1,4 +1,4 @@
-import './index.css'
+import './index.css';
 import './App.css';
 
 function App() {
@@ -8,10 +8,10 @@ function App() {
       <div className = "container">
         <Routes>
           <Route path = "/" element = {<Home/>}/>
-          <Route path = "/About" element = {<About/>}/>
-          <Route path = "/Experience" element = {<Experience/>}/>
-          <Route path = "/Projects" element = {<Projects/>}/>
-          <Route path = "/Beyond" element = {<Beyond/>}/>
+          <Route path = "/about" element = {<About/>}/>
+          <Route path = "/experience" element = {<Experience/>}/>
+          <Route path = "/projects" element = {<Projects/>}/>
+          <Route path = "/beyond" element = {<Beyond/>}/>
         </Routes>
       </div>
     </>

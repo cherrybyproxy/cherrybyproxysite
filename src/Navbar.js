@@ -5,10 +5,10 @@ export default function Navbar() {
         <nav className = "nav">
             <Link to = "/" className = "navTitle"> Home </Link>
             <ul>
-                <CustomLink to = "/About">About</CustomLink>
-                <CustomLink to = "/Experience">Experience</CustomLink>
-                <CustomLink to = "/Projects">Projects</CustomLink>
-                <CustomLink to = "/Beyond">Beyond</CustomLink>
+                <CustomLink to = "/about">About</CustomLink>
+                <CustomLink to = "/experience">Experience</CustomLink>
+                <CustomLink to = "/projects">Projects</CustomLink>
+                <CustomLink to = "/beyond">Beyond</CustomLink>
             </ul>
         </nav>
     )
