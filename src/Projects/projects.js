@@ -5,7 +5,7 @@ export default function Projects () {
         <>
             <div className = {styles.pageContainer}>
                 <p className = {styles.title}>Projects</p>
-                <p className = {styles.text}>what do i even do w my time tbh</p>
+                <p className = {styles.text}>hello git</p>
             </div>
         </>
     )
