@@ -1,4 +1,4 @@
-import {Link, useMatch, useResolvedPath} from "react-router-dom"
+import {Link, useMatch, useResolvedPath} from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -16,7 +16,7 @@ export default function Navbar() {
 
 function CustomLink({to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)
-    const isActive = useMatch({path : useResolvedPathPath.path, end : true})
+    const isActive = useMatch({path : resolvedPath.path, end : true})
     return (
         <li className = {isActive ? "active" : ""}>
                 <Link to = {to} {...props}>{children}</Link>

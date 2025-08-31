@@ -1,7 +1,14 @@
-import './index.css';
-import './App.css';
+import './index.css'
+import './App.css'
+import Navbar from './Navbar'
+import About from './about/About.js'
+import Beyond from './beyond/Beyond.js'
+import Experience from './experience/Experience.js'
+import Home from './home/Home.js'
+import Projects from './projects/Projects.js'
+import {Route, Routes} from 'react-router-dom'
 
-function App() {
+export default function App() {
   return (
     <>
       <Navbar />
@@ -17,8 +24,6 @@ function App() {
     </>
   );
 }
-
-export default App;
 
 // Well I was there on the day<br  />
 //           They sold the cause for the queen<br  />
