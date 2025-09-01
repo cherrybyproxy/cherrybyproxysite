@@ -1,4 +1,3 @@
-import './index.css'
 import './App.css'
 import Navbar from './Navbar'
 import About from './About/About.js'
@@ -11,7 +10,7 @@ import {Route, Routes} from 'react-router-dom'
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar className = "nav"/>
       <div className = "container">
         <Routes>
           <Route path = "/" element = {<Home/>}/>
