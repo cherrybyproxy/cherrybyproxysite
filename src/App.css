@@ -46,6 +46,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
     padding: 0;
     overflow: hidden;
+    background: url('./CabinInterior.PNG');
+    background-size: cover;
 }
 
 code {
