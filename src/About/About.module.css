@@ -1,7 +1,25 @@
+.pageContainer {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
-    height: 5px;
+    color: white;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-family: 'Unbounded';
+    margin-top: 10rem;
+    margin-bottom: 2rem;
 }
 
 .text {
-    height: 2px;
+    color: white;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family:'Space Grotesk';
+    width: 60%;
 }

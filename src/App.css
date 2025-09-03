@@ -66,7 +66,7 @@ code {
   justify-content: space-between;
   padding: 0.25rem 1rem;
   align-items: center;
-  gap: 1.5rem;
+  gap: 5rem;
   z-index: 1000;
 
   background: rgba(255,255,255,0.25);

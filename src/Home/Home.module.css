@@ -6,27 +6,21 @@
     height: 100%;
     display: flex;
     flex-direction: column; /* top to bottom */
-    justify-content: center; /* main axis */
     align-items: center; /*secondary axis */
     text-align: center;
     padding: 1rem;
 }
 
-.cabinExterior {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* keeps aspect ratio */
-}
-
 .title {
     color: white;
     font-size: clamp(3rem, 5vw, 5rem);
-    margin: 12rem;
+    margin-bottom: 12rem;
     font-family: 'Unbounded'
 }
 
 .text {
     color: white;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-family: 'Shadows into Light';
+    margin-top: 20rem;
 }
