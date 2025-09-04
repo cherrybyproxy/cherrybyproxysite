@@ -1,5 +1,5 @@
 import styles from './Exterior.module.css'
-import cabinExterior from './CabinExterior.PNG'
+import cabinExterior from './CabinExterior.jpg'
 
 export default function Home () {
     return (

@@ -1,18 +1,45 @@
 .title {
-    height: 5px;
     color: white;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-family: 'Unbounded';
 }
 
 .text {
-    height: 2px;
     color: white;
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+    font-family:'Space Grotesk';
 }
 
 .pageContainer {
-    overflow-y: auto; /* scrollable "pop up" */
-    background-color: green;
+    margin: 10rem;
+    height: calc(100vh - 20rem);
+    overflow:hidden;
+    background-color: #112711;
+    border-radius: 30px;
+    padding: 1rem 0.75rem 1rem 0;
+}
+
+.scrollSpace {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10rem 20rem 0 20rem;
 }
+
+.scrollSpace::-webkit-scrollbar {
+    width: 10px;
+}
+
+.scrollSpace::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollSpace::-webkit-scrollbar-thumb {
+    background: #313e1b;
+    border-radius: 10px;
+}
+
+/* good colours
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
