@@ -5,8 +5,8 @@ export default function Projects () {
     return (
         <>
             <div className = {styles.pageContainer}>
+                <ExitButton/>
                 <div className = {styles.scrollSpace}>
-                    <ExitButton/>
                     <p className = {styles.title}>Projects</p>
                     <p className = {styles.text}>hello git</p>
                     <p className = {styles.text}>These are the eyes and the lies of the taken <br/>
@@ -63,6 +63,6 @@ function ExitButton() {
         navigate('/home');
     }
     return (
-        <button onClick = {click}>X</button>
+        <button onClick = {click} className = {styles.exitButton}>X</button>
     )
 }

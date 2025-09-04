@@ -16,7 +16,7 @@
     overflow:hidden;
     background-color: #112711;
     border-radius: 30px;
-    padding: 1rem 0.75rem 1rem 0;
+    padding: 1rem;
 }
 
 .scrollSpace {
@@ -40,6 +40,19 @@
     background: #313e1b;
     border-radius: 10px;
 }
+
+.exitButton {
+    padding: 0.5rem;
+    border-radius: 2px;
+    color: #313e1b;
+    border-radius: 50%;
+    border-style: none;
+    padding: 0.5rem;
+    margin: 0;
+    background-color: white;
+}
+
+
 
 /* good colours
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
