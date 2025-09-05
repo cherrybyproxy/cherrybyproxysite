@@ -12,7 +12,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "image"></img>
+                            <img src = {image} alt = "UoMe"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
@@ -22,7 +22,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "image"></img>
+                            <img src = {image} alt = "Wat-a-Moment"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
@@ -32,7 +32,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "image"></img>
+                            <img src = {image} alt = "Bad Ice Cream"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>

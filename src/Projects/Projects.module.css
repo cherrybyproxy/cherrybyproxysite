@@ -47,10 +47,10 @@
     padding: 0.5rem;
     width: 2rem;
     height: 2rem;
-    color: #313e1b;
+    color: white;
     border-radius: 50%;
     border-style: none;
-    background-color: white;
+    background-color: #313e1b;
     position: absolute;
     display: flex;
     align-items: center;
@@ -88,6 +88,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 1rem;
+    gap: 1rem;
 }
 
 .projectCaption h2 {

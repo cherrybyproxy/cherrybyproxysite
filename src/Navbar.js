@@ -1,4 +1,4 @@
-import {Link, useMatch, useResolvedPath} from 'react-router-dom'
+import {Link, useMatch, useResolvedPath, useNavigate} from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -18,9 +18,18 @@ export default function Navbar() {
 function CustomLink({to, children, ...props}) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({path : resolvedPath.pathname, end : true})
+    const navigate = useNavigate();
+
+    const click = (e) => {
+        if (isActive && (to === "/experience" || to === "/projects" || to === "/beyond")) {
+            e.preventDefault();
+            navigate("/home");
+        }
+    }
+
     return (
         <li className = {isActive ? "active" : ""}>
-                <Link to = {to} {...props}>{children}</Link>
+                <Link to = {to} onClick = {click} {...props}>{children}</Link>
         </li>
     )
 }
