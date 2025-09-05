@@ -8,7 +8,7 @@ export default function Projects () {
             <div className = {styles.pageContainer}>
                 <ExitButton/>
                 <div className = {styles.scrollSpace}>
-                    <p className = {styles.title}>PROJECTS</p>
+                    <h1 className = {styles.title}>PROJECTS</h1>
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
@@ -16,7 +16,10 @@ export default function Projects () {
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
-                            <h3>Python, SQLite, React Native, JS, HTML/CSS</h3>
+                            <div className = {styles.dtContainer}>
+                                <h3>Python, SQLite, React Native, JS, HTML/CSS</h3>
+                                <h4>Jan 2025</h4>
+                            </div>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>
@@ -27,7 +30,10 @@ export default function Projects () {
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Wat-a-Moment</h2>
-                            <h3>Python, SQL, Flask, HTML/CSS</h3>
+                            <div className = {styles.dtContainer}>
+                                <h3>Python, SQL, Flask, HTML/CSS</h3>
+                                <h4>Dec 2024</h4>
+                            </div>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>
@@ -38,7 +44,10 @@ export default function Projects () {
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Adobe Flash Game Re-creation</h2>
-                            <h3>Java, Git</h3>
+                            <div className = {styles.dtContainer}>
+                                <h3>Java, Git</h3>
+                                <h4>Jan 2024</h4>
+                            </div>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>

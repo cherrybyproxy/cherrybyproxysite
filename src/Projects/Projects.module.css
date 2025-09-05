@@ -2,6 +2,8 @@
     color: #e4ecd4;
     font-size: clamp(1.5rem, 2.5vw, 2.5rem);
     font-family: 'Unbounded';
+    font-weight: normal;
+    margin: 3rem;
 }
 
 .text {
@@ -98,6 +100,13 @@
     font-size: 1.5rem;
     margin: 0;
     color: #bad095;
+    font-size: 2rem;
+}
+
+.dtContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .projectCaption h3 {
@@ -107,6 +116,17 @@
     margin: 0;
     color: #718e3e;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.projectCaption h4 {
+    font-family: 'Space Grotesk';
+    font-weight: normal;
+    margin: 0;
+    color: #718e3e;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    right: 0;
 }
 
 .projectCaption p {

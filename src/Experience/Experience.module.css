@@ -1,23 +1,140 @@
 .title {
-    height: 5px;
-    color: white;
+    color: #e4ecd4;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    font-family: 'Unbounded';
+    font-weight: normal;
+    margin: 3rem;
 }
 
 .text {
-    height: 2px;
     color: white;
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+    font-family:'Space Grotesk';
 }
 
 .pageContainer {
+    margin: 9rem 12rem 9rem 12rem;
+    height: calc(100vh - 18rem);
+    overflow:hidden;
+    background-color: #112711;
+    border-radius: 30px;
+    padding: 2rem 1rem 2rem 1rem;
+    position: relative;
+}
+
+.scrollSpace {
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.scrollSpace::-webkit-scrollbar {
+    width: 10px;
     position: absolute;
-    top: 0;
-    left: 0;
+}
+
+.scrollSpace::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.scrollSpace::-webkit-scrollbar-thumb {
+    background: #313e1b;
+    border-radius: 10px;
+}
+
+.exitButton {
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    color: #e4ecd4;
+    border-radius: 50%;
+    border-style: none;
+    background-color: #313e1b;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    top: 1rem;
+    left: 1rem;
+}
+
+.projectContainer {
+    background-color: #313e1b;
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    min-height: 20rem;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.projectImg {
+    flex: 1;
+    display: flex;
+}
+
+.projectImg img {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column; /* top to bottom */
-    justify-content: center; /* main axis */
-    align-items: center; /*secondary axis */
-    text-align: center;
-    padding: 1rem;
+    object-fit: cover;
+    border-radius: 12px;
 }
+
+.projectCaption {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0 1rem 1rem 2rem;
+    gap: 0.5rem;
+}
+
+.projectCaption h2 {
+    font-family: 'Unbounded';
+    font-size: 1.5rem;
+    margin: 0;
+    color: #bad095;
+    font-size: 2rem;
+}
+
+.dtContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectCaption h3 {
+    font-family: 'Space Grotesk';
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    color: #718e3e;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.projectCaption h4 {
+    font-family: 'Space Grotesk';
+    font-weight: normal;
+    margin: 0;
+    color: #718e3e;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    right: 0;
+}
+
+.projectCaption p {
+    margin: 0;
+    font-size: 1rem;
+    color: #a4c171;
+    font-family: 'Space Grotesk';
+}
+
+/* good colours
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
