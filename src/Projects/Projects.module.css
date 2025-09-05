@@ -11,12 +11,13 @@
 }
 
 .pageContainer {
-    margin: 10rem;
+    margin: 10rem 12rem 10rem 12rem;
     height: calc(100vh - 20rem);
     overflow:hidden;
     background-color: #112711;
     border-radius: 30px;
     padding: 1rem;
+    position: relative;
 }
 
 .scrollSpace {
@@ -43,13 +44,17 @@
 
 .exitButton {
     padding: 0.5rem;
-    border-radius: 2px;
+    width: 2rem;
+    height: 2rem;
     color: #313e1b;
     border-radius: 50%;
     border-style: none;
-    padding: 0.5rem;
-    margin: 0;
     background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 
