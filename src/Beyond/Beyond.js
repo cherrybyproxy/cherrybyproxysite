@@ -1,8 +1,14 @@
 import styles from './Beyond.module.css'
 import { useNavigate } from 'react-router-dom'
+import Carousel from './Carousel.js'
 import image from './SusHamster.jpg'
+import Hamster from './Images/SusHamster.jpg';
+import Dog from './Images/PhobicDog.JPG';
+import Monkey from './Images/TiredMonkey.jpg';
 
 export default function Beyond () {
+    const carouselimg1 = [Monkey, Hamster, Dog];
+
     return (
         <>
             <div className = {styles.pageContainer}>
@@ -13,7 +19,7 @@ export default function Beyond () {
                     <div className = {styles.triContainer}>
                         <div className = {styles.hobbyContainer}>
                             <div className = {styles.projectImg}>
-                                <img src = {image} alt = "Athletics"></img>
+                                <Carousel images = {carouselimg1}/>
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Athletics</h2>
