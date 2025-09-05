@@ -92,3 +92,7 @@ code {
   text-decoration: none;
   font-family: 'Space Grotesk'
 }
+
+.nav li.active a{
+  color: #313e1b;
+}
