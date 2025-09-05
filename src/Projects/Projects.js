@@ -8,7 +8,7 @@ export default function Projects () {
             <div className = {styles.pageContainer}>
                 <ExitButton/>
                 <div className = {styles.scrollSpace}>
-                    <p className = {styles.title}>Projects</p>
+                    <p className = {styles.title}>PROJECTS</p>
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
@@ -16,6 +16,7 @@ export default function Projects () {
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
+                            <h3>Python, SQLite, React Native, JS, HTML/CSS</h3>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>
@@ -25,7 +26,8 @@ export default function Projects () {
                             <img src = {image} alt = "Wat-a-Moment"></img>
                         </div>
                         <div className = {styles.projectCaption}>
-                            <h2>UoMe</h2>
+                            <h2>Wat-a-Moment</h2>
+                            <h3>Python, SQL, Flask, HTML/CSS</h3>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>
@@ -35,7 +37,8 @@ export default function Projects () {
                             <img src = {image} alt = "Bad Ice Cream"></img>
                         </div>
                         <div className = {styles.projectCaption}>
-                            <h2>UoMe</h2>
+                            <h2>Adobe Flash Game Re-creation</h2>
+                            <h3>Java, Git</h3>
                             <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
                         </div>
                     </div>
