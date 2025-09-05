@@ -11,12 +11,12 @@
 }
 
 .pageContainer {
-    margin: 10rem 12rem 10rem 12rem;
-    height: calc(100vh - 20rem);
+    margin: 9rem 12rem 9rem 12rem;
+    height: calc(100vh - 18rem);
     overflow:hidden;
     background-color: #112711;
     border-radius: 30px;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
     position: relative;
 }
 
@@ -56,6 +56,8 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
+    top: 1rem;
+    left: 1rem;
 }
 
 .projectContainer {
