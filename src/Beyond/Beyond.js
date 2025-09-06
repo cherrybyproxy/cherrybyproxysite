@@ -1,13 +1,20 @@
 import styles from './Beyond.module.css'
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel.js'
-import image from './SusHamster.jpg'
+
 import Hamster from './Images/SusHamster.jpg';
 import Dog from './Images/PhobicDog.JPG';
 import Monkey from './Images/TiredMonkey.jpg';
 
+/* athletics*/
+
+
 export default function Beyond () {
     const carouselimg1 = [Monkey, Hamster, Dog];
+    const carouselimg2 = [Monkey, Hamster, Dog];
+    const carouselimg3 = [Monkey, Hamster, Dog];
+    const carouselimg4 = [Monkey, Hamster, Dog];
+    const carouselimg5 = [Monkey, Hamster, Dog];
 
     return (
         <>
@@ -23,52 +30,52 @@ export default function Beyond () {
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Athletics</h2>
-                                <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
+                                <p>I enjoy playing volleyball and tennis. You'll also find me at the gym in the mornings.</p>
                             </div>
                         </div>
 
                         <div className = {styles.hobbyContainer}>
                             <div className = {styles.projectImg}>
-                                <img src = {image} alt = "Crochet"></img>
+                                <Carousel images = {carouselimg2}/>
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Crochet</h2>
-                                <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
+                                <p>I make anything from plushies to a tiered skirt. WIP: 2 big rats for cool people.</p>
                             </div>
                         </div>
 
                         <div className = {styles.hobbyContainer}>
                             <div className = {styles.projectImg}>
-                                <img src = {image} alt = "Clay Art"></img>
+                                <Carousel images = {carouselimg3}/>
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Clay Art</h2>
-                                <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
+                                <p>I am a big fan of customizing my jewelry and creating figurines.</p>
                             </div>
                         </div>
+
                     </div>
 
                     <div className = {styles.triContainer}>
                         <div className = {styles.hobbyContainer}>
                             <div className = {styles.projectImg}>
-                                <img src = {image} alt = "CAD"></img>
+                                <Carousel images = {carouselimg4}/>
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>CAD</h2>
-                                <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
+                                <p>I am a Fusion360 fan. Trying to learn how to use KiCAD.</p>
                             </div>
                         </div>
 
                         <div className = {styles.hobbyContainer}>
                             <div className = {styles.projectImg}>
-                                <img src = {image} alt = "Baking"></img>
+                                <Carousel images = {carouselimg5}/>
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Baking</h2>
-                                <p>Financial tracker to manage debt between friends. Built at McHacks 2025.</p>
+                                <p>I can't cook!</p>
                             </div>
                         </div>
-
 
                     </div>
 
