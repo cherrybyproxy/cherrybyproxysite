@@ -24,3 +24,35 @@
     font-family: 'Shadows into Light';
     margin-top: 20rem;
 }
+
+/* .ramClickSpace {
+    position: absolute;
+    top: 6.5%; 
+    left: 55%;
+    width: 18%;
+    height: 28%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 30%);
+    clip-path: polygon( 
+        0% 0%, 100% 0%, 50% 100%
+    );
+}
+
+.bagClickSpace {
+    position: absolute;
+    top: 48%; 
+    left: 25%;
+    width: 16%;
+    height: 22%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 30%);
+    clip-path: polygon( 
+        15% 10%, 50% 0%, 100% 50%, 100% 70%, 75% 95%, 35% 75%, 0% 40%
+    );
+} */
