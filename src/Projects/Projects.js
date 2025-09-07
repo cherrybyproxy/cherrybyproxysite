@@ -1,6 +1,5 @@
 import styles from './Projects.module.css'
 import { useNavigate } from 'react-router-dom'
-import image from './SusHamster.jpg'
 
 export default function Projects () {
     return (
@@ -12,7 +11,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "UoMe"></img>
+                            <img src = "https://imgur.com/FzG2RSm.jpg" alt = "UoMe"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
@@ -27,7 +26,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "Wat-a-Moment"></img>
+                            <img src = "https://imgur.com/sUaCmVh.jpg" alt = "Wat-a-Moment"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Wat-a-Moment</h2>
@@ -42,7 +41,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "Math Club Website"></img>
+                            <img src = "https://imgur.com/JSVLCmd.jpg" alt = "Math Club Website"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>MGCI Math Club Website</h2>
@@ -57,7 +56,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "Bad Ice Cream"></img>
+                            <img src = "https://imgur.com/iwHPx3X.jpg" alt = "Bad Ice Cream"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Adobe Flash Game Re-creation</h2>

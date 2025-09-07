@@ -1,6 +1,5 @@
 import styles from './Experience.module.css'
 import { useNavigate } from 'react-router-dom'
-import image from './SusHamster.jpg'
 
 export default function Experience () {
     return (
@@ -12,7 +11,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "CIBC"></img>
+                            <img src = "https://imgur.com/HXlsJKi.jpg" alt = "CIBC"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Canadian Imperial Bank of Commerce</h2>
@@ -26,7 +25,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "Bad Ice Cream"></img>
+                            <img src = "https://imgur.com/wgitQYn.jpg" alt = "FRC"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>First Robotics Competition 8574</h2>
@@ -40,7 +39,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {image} alt = "TSP"></img>
+                            <img src = "https://imgur.com/00SnmeF.jpg" alt = "TSP"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>The STEAM Project</h2>
