@@ -33,7 +33,7 @@ export default function Beyond () {
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Crochet</h2>
-                                <p>I make anything from plushies to a tiered skirt. WIP: 2 big rats for cool people.</p>
+                                <p>I make anything from plushies to tiered skirts. WIP: 2 big rats for cool people.</p>
                             </div>
                         </div>
 
@@ -43,7 +43,7 @@ export default function Beyond () {
                             </div>
                             <div className = {styles.projectCaption}>
                                 <h2>Clay Art</h2>
-                                <p>I am a big fan of customizing my jewelry and creating figurines.</p>
+                                <p>I love customizing my jewelry and creating figurines.</p>
                             </div>
                         </div>
 
