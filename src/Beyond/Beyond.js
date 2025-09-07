@@ -2,11 +2,22 @@ import styles from './Beyond.module.css'
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel.js'
 
+import Brownie from './BakingImages/BrownieImage.jpg'
+import Bun from './BakingImages/BunImage.JPG'
+import Carrot from './BakingImages/CarrotImage.JPG'
+import Cinna from './BakingImages/CinnaImage.JPG'
+import Heart from './BakingImages/HeartImage.HEIC'
+import Matcha from './BakingImages/MatchaImage.JPG'
+import Mochi from './BakingImages/MochiImage.JPG'
+import Muffin from './BakingImages/MuffinImage.JPG'
+import Raspberry from './BakingImages/StrawberryImage.JPG'
+
 export default function Beyond () {
     const carouselimg1 = ["https://imgur.com/McaPxay.jpg", "https://imgur.com/9Gegj5X.jpg"];
     const carouselimg2 = ["https://imgur.com/gYovi1L.jpg", "https://imgur.com/W153Weh.jpg", "https://imgur.com/YZaEkdb.jpg", "https://imgur.com/NTlnDis.jpg", "https://imgur.com/UzjssGe.jpg"]; 
     const carouselimg3 = ["https://imgur.com/DNxxMEY.jpg", "https://imgur.com/vCFBir6,jpg", "https://imgur.com/ayE6sPP.jpg", "https://imgur.com/TVA6wQZ.jpg", "https://imgur.com/Rc78ec0.jpg", "https://imgur.com/8qhgB2V.jpg", "https://imgur.com/xWZ5XCG.jpg", "https://imgur.com/JRwTwp8.jpg", "https://imgur.com/Yg8RlxR.jpg"];
-    const carouselimg4 = ["https://imgur.com/2CsXgSk.jpg", "https://imgur.com/66gz4Im.jpg", "https://imgur.com/jF3uAIX.jpg", "https://imgur.com/3jceLAI.jpg", "https://imgur.com/0UKF1Mn.jpg", "https://imgur.com/0jYQo1O.jpg", "https://imgur.com/GaAwr1f.jpg", "https://imgur.com/KCGqjLB.jpg", "https://imgur.com/IddqhSv.jpg", "https://imgur.com/9kqeQcj.jpg"];
+    // const carouselimg4 = ["https://imgur.com/2CsXgSk.jpg", "https://imgur.com/66gz4Im.jpg", "https://imgur.com/jF3uAIX.jpg", "https://imgur.com/3jceLAI.jpg", "https://imgur.com/0UKF1Mn.jpg", "https://imgur.com/0jYQo1O.jpg", "https://imgur.com/GaAwr1f.jpg", "https://imgur.com/KCGqjLB.jpg", "https://imgur.com/IddqhSv.jpg", "https://imgur.com/9kqeQcj.jpg"];
+    const carouselimg4 = [Matcha, Brownie, Bun, Carrot, Cinna, Heart, Mochi, Muffin, Raspberry];
     const carouselimg5 = ["https://imgur.com/Ewgiqbx.jpg", "https://imgur.com/fwNLOwF.jpg", "https://imgur.com/CRFoDQW.jpg"];
 
     return (
