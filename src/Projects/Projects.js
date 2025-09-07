@@ -16,7 +16,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {UoMe} /*"https://imgur.com/FzG2RSm.jpg"*/ alt = "UoMe"></img>
+                            <img src = {UoMe} alt = "UoMe"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
@@ -31,7 +31,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {WAM} /*"https://imgur.com/sUaCmVh.jpg"*/ alt = "Wat-a-Moment"></img>
+                            <img src = {WAM} alt = "Wat-a-Moment"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Wat-a-Moment</h2>
@@ -46,7 +46,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {MMC} /*"https://imgur.com/JSVLCmd.jpg"*/ alt = "Math Club Website"></img>
+                            <img src = {MMC} alt = "Math Club Website"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>MGCI Math Club Website</h2>
@@ -61,7 +61,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {BIC} /*"https://imgur.com/iwHPx3X.jpg"*/ alt = "Bad Ice Cream"></img>
+                            <img src = {BIC} alt = "Bad Ice Cream"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Adobe Flash Game Re-creation</h2>

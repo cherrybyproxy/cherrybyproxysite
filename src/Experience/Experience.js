@@ -15,7 +15,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {CIBC} /*"https://imgur.com/HXlsJKi.jpg"*/ alt = "CIBC"></img>
+                            <img src = {CIBC} alt = "CIBC"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Canadian Imperial Bank of Commerce</h2>
@@ -29,7 +29,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {FRC} /*"https://imgur.com/wgitQYn.jpg"*/ alt = "FRC"></img>
+                            <img src = {FRC} alt = "FRC"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>First Robotics Competition 8574</h2>
@@ -43,7 +43,7 @@ export default function Experience () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {TSP} /*"https://imgur.com/00SnmeF.jpg"*/ alt = "TSP"></img>
+                            <img src = {TSP} alt = "TSP"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>The STEAM Project</h2>
