@@ -1,6 +1,11 @@
 import styles from './Projects.module.css'
 import { useNavigate } from 'react-router-dom'
 
+import UoMe from './UoMeImage.png'
+import WAM from './WatAMomentImage.jpg'
+import MMC from './MathClubImage.png'
+import BIC from './BICImage.png'
+
 export default function Projects () {
     return (
         <>
@@ -11,7 +16,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = "https://imgur.com/FzG2RSm.jpg" alt = "UoMe"></img>
+                            <img src = {UoMe} /*"https://imgur.com/FzG2RSm.jpg"*/ alt = "UoMe"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
@@ -26,7 +31,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = "https://imgur.com/sUaCmVh.jpg" alt = "Wat-a-Moment"></img>
+                            <img src = {WAM} /*"https://imgur.com/sUaCmVh.jpg"*/ alt = "Wat-a-Moment"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Wat-a-Moment</h2>
@@ -41,7 +46,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = "https://imgur.com/JSVLCmd.jpg" alt = "Math Club Website"></img>
+                            <img src = {MMC} /*"https://imgur.com/JSVLCmd.jpg"*/ alt = "Math Club Website"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>MGCI Math Club Website</h2>
@@ -56,7 +61,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = "https://imgur.com/iwHPx3X.jpg" alt = "Bad Ice Cream"></img>
+                            <img src = {BIC} /*"https://imgur.com/iwHPx3X.jpg"*/ alt = "Bad Ice Cream"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>Adobe Flash Game Re-creation</h2>
