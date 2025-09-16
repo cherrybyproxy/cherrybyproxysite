@@ -5,6 +5,7 @@ import UoMe from './UoMeImage.png'
 import WAM from './WatAMomentImage.jpg'
 import MMC from './MathClubImage.png'
 import BIC from './BICImage.png'
+import LaTalk from './LaTalkImage.png'
 
 export default function Projects () {
     return (
@@ -16,7 +17,7 @@ export default function Projects () {
 
                     <div className = {styles.projectContainer}>
                         <div className = {styles.projectImg}>
-                            <img src = {UoMe} alt = "UoMe"></img>
+                            <img src = {LaTalk} alt = "LaTalk"></img>
                         </div>
                         <div className = {styles.projectCaption}>
                             <h2>LaTalk</h2>
