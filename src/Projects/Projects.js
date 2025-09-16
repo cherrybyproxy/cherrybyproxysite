@@ -19,6 +19,21 @@ export default function Projects () {
                             <img src = {UoMe} alt = "UoMe"></img>
                         </div>
                         <div className = {styles.projectCaption}>
+                            <h2>LaTalk</h2>
+                            <div className = {styles.dtContainer}>
+                                <h3>Python, SSE-Starlette, Flask, React, JavaScript, HTML/CSS</h3>
+                                <h4>Sept 2025</h4>
+                            </div>
+                            <p>LaTalk is a full-stack React web app that translates recorded speech into LaTeX in real time. It integrates AI-driven annotation to fill in missing context and skipped steps, while asynchronous programming ensures low-latency performance. The system also features native smart glasses integration, displaying custom graphics directly on screen to create an immersive and interactive note-taking experience.</p>
+                            <a href = "https://github.com/the-Fish2/LaTalk" target = "_blank" rel="noreferrer">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div className = {styles.projectContainer}>
+                        <div className = {styles.projectImg}>
+                            <img src = {UoMe} alt = "UoMe"></img>
+                        </div>
+                        <div className = {styles.projectCaption}>
                             <h2>UoMe</h2>
                             <div className = {styles.dtContainer}>
                                 <h3>Python, Flask, React Native, TypeScript, HTML/CSS</h3>
