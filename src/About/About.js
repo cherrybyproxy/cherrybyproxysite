@@ -5,7 +5,7 @@ export default function About () {
         <>
             <div className = {styles.pageContainer}>
                 <p className = {styles.title}>Hey, I'm Leah!</p>
-                <p className = {styles.text}>I'm a software engineering 2A student at the University of Waterloo.
+                <p className = {styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.
                 </p>
             </div>
         </>
