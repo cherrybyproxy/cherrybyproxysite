@@ -6,7 +6,6 @@ export default function About () {
             <div className = {styles.pageContainer}>
                 <p className = {styles.title}>Hey, I'm Leah!</p>
                 <p className = {styles.text}>I'm a software engineering 2A student at the University of Waterloo.
-                    I'm passionate about full-stack development, robotics, and DB management.
                 </p>
             </div>
         </>
