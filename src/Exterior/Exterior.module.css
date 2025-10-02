@@ -41,15 +41,26 @@
     transition: opacity 0.3s ease-out;
   }
   
-  .title {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.title {
     font-weight: bold;
-  }
-  
-  .text {
-    font-size: 1.2rem;
-  }
+    color: white;
+    font-size: clamp(3rem, 5vw, 5rem);
+    font-family: 'Unbounded';
+    margin: 0rem auto 15rem auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text {
+    color: white;
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: 'Space Grotesk';
+    width: 60%;
+    margin: 0 auto; /* Center horizontally with auto margins */
+    text-align: center; /* Ensure text is centered */
+}
   
   .scrollTracker {
     position: fixed;
