@@ -70,8 +70,9 @@
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
     z-index: 3;
+    opacity: 50%;
   }
