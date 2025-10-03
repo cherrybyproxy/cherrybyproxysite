@@ -52,7 +52,7 @@ export default function About () {
             opacity: 1 - zoomProgress,
             }}
         >
-            <p className={styles.title}>Hey, I'm Leah!</p>
+            <p className={styles.title}>Hey, I'm Leah! 𓆩^._.^𓆪</p>
             <p className={styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.</p>
             <p className={styles.text2}>Continue scrolling.</p>
         </div>
