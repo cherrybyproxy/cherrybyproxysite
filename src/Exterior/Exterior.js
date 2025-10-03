@@ -9,7 +9,7 @@ export default function Exterior() {
 
   useEffect(() => {
     let scrollAmount = 0
-    const maxScrollAmount = 2000 // Total scroll needed to complete zoom
+    const maxScrollAmount = 500 // Total scroll needed to complete zoom
 
     const handleWheel = (e) => {
       e.preventDefault()

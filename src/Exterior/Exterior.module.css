@@ -15,7 +15,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transform-origin: 50% 75%; /* Center horizontally, 1/3 from bottom vertically */
+    transform-origin: 50% 75%;
     transition: transform 0.05s ease-out, filter 0.05s ease-out;
   }
   
@@ -58,8 +58,8 @@
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-family: 'Space Grotesk';
     width: 60%;
-    margin: 0 auto; /* Center horizontally with auto margins */
-    text-align: center; /* Ensure text is centered */
+    margin: 0 auto;
+    text-align: center;
 }
   
   .scrollTracker {

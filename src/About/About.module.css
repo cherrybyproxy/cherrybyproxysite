@@ -21,5 +21,39 @@
     color: white;
     font-size: clamp(1rem, 2vw, 2rem);
     font-family:'Space Grotesk';
-    width: 60%;
+    /* width: 60%; */
 }
+
+.text2 {
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-family: 'Space Grotesk';
+    width: 60%;
+    margin: 16rem auto;
+    text-align: center;
+}
+
+.blackOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    pointer-events: none;
+    transition: opacity 0.05s ease-out;
+  }
+
+  .scrollTracker {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    font-family: 'Space Grotesk';
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 3;
+  }
