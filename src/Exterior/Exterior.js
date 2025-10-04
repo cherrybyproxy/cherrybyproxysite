@@ -66,7 +66,7 @@ export default function Exterior() {
         <p className={styles.text}>Scroll to enter.</p>
       </div>
       <div className={styles.scrollTracker}>
-        Zoom Progress: {(zoomProgress * 100).toFixed(0)}%
+        Progress: {(zoomProgress * 100).toFixed(0)}%
       </div>
     </div>
   )
