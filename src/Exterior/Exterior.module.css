@@ -29,7 +29,7 @@
     pointer-events: none;
     transition: opacity 0.05s ease-out;
   }
-  
+
   .pageContainer {
     position: absolute;
     top: 50%;

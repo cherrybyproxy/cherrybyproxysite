@@ -21,15 +21,13 @@
     color: white;
     font-size: clamp(1rem, 2vw, 2rem);
     font-family:'Space Grotesk';
-    /* width: 60%; */
 }
 
 .text2 {
     color: white;
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     font-family: 'Space Grotesk';
-    width: 60%;
-    margin: 14.5rem auto;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -63,5 +61,39 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%;
+    margin: 0 20rem;;
+    height: 50%;
+    gap: 5rem;
   }
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: flex-start;
+  }
+
+  .profile {
+    height: 20rem;
+    margin-top: 2.5rem;
+  }
+
+  a {
+    color: white;
+    margin: 0;
+    color: white;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: 'Space Grotesk';
+    margin: 0 auto;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .linkContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    justify-content: flex-start;
+    margin-left: 0;
+  }
+

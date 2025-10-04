@@ -40,7 +40,7 @@ export default function About () {
     }, [navigate])
 
     return (
-        <div className={styles.exteriorContainer}>
+        <>
         <div
             className={styles.blackOverlay}
             style={{
@@ -53,16 +53,24 @@ export default function About () {
             opacity: 1 - zoomProgress,
             }}
         >
-            <p className={styles.title}>Hey, I'm Leah! 𓆩^._.^𓆪</p>
-            <div className={styles.bioContainer}>
-                <p className={styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.</p>
-                <img className={styles.profile} src={Profile} alt="Profile"></img>
+            <p className = {styles.title}>Hey, I'm Leah! 𓆩^._.^𓆪</p>
+            <div className = {styles.bioContainer}>
+                <div className = {styles.textContainer}>
+                    <p className = {styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.</p>
+                    <p className = {styles.text}>Let's connect!</p>
+                    <div className = {styles.linkContainer}>
+                        <a href = "https://github.com/cherrybyproxy" target = "_blank" rel = "noopener noreferrer">[GitHub]</a>
+                        <a href = "https://www.linkedin.com/in/leah06/" target = "_blank" rel = "noopener noreferrer">[LinkedIn]</a>
+                        <a href = "mailto:leah960319@gmail.com">[Email]</a>
+                    </div>
+                    </div>
+                <img className = {styles.profile} src={Profile} alt="Profile"></img>
             </div>
-            <p className={styles.text2}>Continue scrolling.</p>
+            <p className = {styles.text2}>Continue scrolling.</p>
         </div>
-        <div className={styles.scrollTracker}>
+        <div className = {styles.scrollTracker}>
             Zoom Progress: {(zoomProgress * 100).toFixed(0)}%
         </div>
-        </div>
+        </>
     )
 }
