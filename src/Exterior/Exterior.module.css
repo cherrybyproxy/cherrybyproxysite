@@ -55,8 +55,8 @@
 
 .text {
     color: white;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    font-family: 'Space Grotesk';
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: 'Shadows into Light';
     width: 60%;
     margin: 0 auto;
     text-align: center;

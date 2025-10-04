@@ -10,25 +10,35 @@
 }
 
 .title {
-    color: white;
+    color: #520721;
     font-size: clamp(3rem, 5vw, 5rem);
     font-family: 'Unbounded';
     margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
 .text {
     color: white;
     font-size: clamp(1rem, 2vw, 2rem);
     font-family:'Space Grotesk';
+    margin-bottom: 3rem;
+    margin-top: 0;
 }
 
 .text2 {
     color: white;
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-    font-family: 'Space Grotesk';
+    font-size: clamp(1rem, 2vw, 2rem);
+    font-family: 'Shadows into Light';
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 10rem;
+}
+
+.text3 {
+    color: #7a052f;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: 'Space Grotesk';
+    margin-left: 0;
 }
 
 .blackOverlay {
@@ -75,7 +85,6 @@
 
   .profile {
     height: 20rem;
-    margin-top: 2.5rem;
   }
 
   a {
@@ -94,6 +103,6 @@
     flex-direction: row;
     gap: 5rem;
     justify-content: flex-start;
-    margin-left: 0;
+    margin-bottom: 3rem;
   }
 
