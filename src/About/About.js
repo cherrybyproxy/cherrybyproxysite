@@ -1,7 +1,7 @@
 import styles from './About.module.css'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import Profile from './AboutImage.png'
+import Profile from './ProfileImage.png'
 
 export default function About () {
     const [zoomProgress, setZoomProgress] = useState(0)
