@@ -58,3 +58,10 @@
     z-index: 3;
     opacity: 50%;
   }
+
+  .bioContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }

@@ -54,8 +54,10 @@ export default function About () {
             }}
         >
             <p className={styles.title}>Hey, I'm Leah! 𓆩^._.^𓆪</p>
-            <p className={styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.</p>
-            <img className={styles.profile} src={Profile} alt="Profile"></img>
+            <div className={styles.bioContainer}>
+                <p className={styles.text}>I'm a 2A Software Engineering student at the University of Waterloo.</p>
+                <img className={styles.profile} src={Profile} alt="Profile"></img>
+            </div>
             <p className={styles.text2}>Continue scrolling.</p>
         </div>
         <div className={styles.scrollTracker}>
