@@ -10,7 +10,7 @@
 }
 
 .title {
-    color: #520721;
+    color: #3d2b24; /* #520721 */
     font-size: clamp(3rem, 5vw, 5rem);
     font-family: 'Unbounded';
     margin-top: 10rem;
@@ -18,7 +18,7 @@
 }
 
 .text {
-    color: white;
+    color: #997f78;
     font-size: clamp(1rem, 2vw, 2rem);
     font-family:'Space Grotesk';
     margin-bottom: 3rem;
@@ -26,7 +26,7 @@
 }
 
 .text2 {
-    color: white;
+    color: #997f78;
     font-size: clamp(1rem, 2vw, 2rem);
     font-family: 'Shadows into Light';
     margin: 0 auto;
@@ -35,7 +35,7 @@
 }
 
 .text3 {
-    color: #7a052f;
+    color: #61443a; /* #7a052f */
     font-size: clamp(0.75rem, 1vw, 1rem);
     font-family: 'Space Grotesk';
     margin-left: 0;
@@ -59,7 +59,7 @@
     font-family: 'Space Grotesk';
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    color: #ae9f9a;
     padding: 10px 16px;
     border-radius: 10px;
     font-size: 1rem;
@@ -88,9 +88,8 @@
   }
 
   a {
-    color: white;
+    color: #ae9f9a;
     margin: 0;
-    color: white;
     font-size: clamp(0.75rem, 1vw, 1rem);
     font-family: 'Space Grotesk';
     margin: 0 auto;
