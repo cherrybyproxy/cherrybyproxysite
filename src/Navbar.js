@@ -3,7 +3,7 @@ import {Link, useMatch, useResolvedPath, useNavigate} from 'react-router-dom'
 export default function Navbar() {
     return (
         <nav className = "nav">
-            <Link to = "/" className = "navTitle"> Exterior </Link>
+            {/* <Link to = "/" className = "navTitle"> Exterior </Link> */}
             <ul>
                 <CustomLink to = "/about">About</CustomLink>
                 <CustomLink to = "/home">Home</CustomLink>
