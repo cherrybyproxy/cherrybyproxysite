@@ -63,7 +63,7 @@ export default function About () {
                         <a href = "https://www.linkedin.com/in/leah06/" target = "_blank" rel = "noopener noreferrer">[LINKEDIN]</a>
                         <a href = "mailto:leah960319@gmail.com">[EMAIL]</a>
                     </div>
-                    <p className = {styles.text3}>♬ˎˊ˗ Kehlani - Folded</p>
+                    <p className = {styles.text3}>♬ˎˊ˗ Sleeping With Sirens - Postcards and Polaroids</p>
                     </div>
                 <img className = {styles.profile} src={Profile} alt="Profile"></img>
             </div>
