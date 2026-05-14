@@ -30,9 +30,8 @@
   color: #6d5d58;
   font-size: clamp(1rem, 2vw, 2rem);
   font-family: 'Shadows into Light';
-  margin: 0 auto;
+  margin: auto auto 4rem auto;
   text-align: center;
-  margin-bottom: 10rem;
 }
 
 .text3 {
@@ -40,7 +39,7 @@
   /* #7a052f */
   font-size: clamp(0.75rem, 1vw, 1rem);
   font-family: 'Space Grotesk';
-  margin-left: 0;
+  margin: 0;
 }
 
 .blackOverlay {
@@ -108,6 +107,7 @@ a {
   margin-bottom: 3rem;
 }
 
+/* Mobile / Tablet (max-width: 768px) and Portrait */
 @media (max-width: 768px),
 (orientation: portrait) {
   .title {
@@ -133,6 +133,7 @@ a {
   }
 }
 
+/* Horizontal Mobile (max-height: 600px) */
 @media (max-height: 600px) {
   .title {
     margin-top: 5rem;
@@ -158,7 +159,7 @@ a {
     margin-bottom: 1rem;
   }
 
-  .text2 {
-    margin-bottom: 2rem;
+  .text3 {
+    margin: 0;
   }
 }

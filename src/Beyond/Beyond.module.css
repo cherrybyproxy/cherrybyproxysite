@@ -202,6 +202,7 @@ background-color: #e4ecd4;
 transform: scale(1.2);
 }
 
+/* Mobile / Tablet (max-width: 768px) */
 @media (max-width: 768px) {
   .pageContainer {
     margin: 5rem 1rem 2rem 1rem;
@@ -236,6 +237,7 @@ transform: scale(1.2);
   }
 }
 
+/* Small Mobile (max-width: 768px and max-height: 700px) */
 @media (max-width: 768px) and (max-height: 700px) {
   .projectCaption p {
     -webkit-line-clamp: 3;
@@ -243,7 +245,12 @@ transform: scale(1.2);
   }
 }
 
+/* Horizontal Mobile (max-height: 600px) */
 @media (max-height: 600px) {
+  .title {
+    margin: 1rem 3rem;
+  }
+
   .pageContainer {
     margin: 4rem 2rem 1rem 2rem;
     height: calc(100dvh - 5rem);
@@ -254,6 +261,7 @@ transform: scale(1.2);
   }
 }
 
+/* Portrait Mobile / Tablet */
 @media (orientation: portrait) {
   .pageContainer {
     margin: 5rem 1rem 2rem 1rem;

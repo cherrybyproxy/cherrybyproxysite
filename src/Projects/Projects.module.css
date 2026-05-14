@@ -1,161 +1,163 @@
 .title {
-    color: #e4ecd4;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-    font-family: 'Unbounded';
-    font-weight: normal;
-    margin: 3rem;
+  color: #e4ecd4;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-family: 'Unbounded';
+  font-weight: normal;
+  margin: 3rem;
 }
 
 .text {
-    color: white;
-    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
-    font-family:'Space Grotesk';
+  color: white;
+  font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+  font-family: 'Space Grotesk';
 }
 
 .pageContainer {
-    margin: 9rem 12rem 9rem 12rem;
-    height: calc(100vh - 18rem);
-    overflow:hidden;
-    background-color: #112711;
-    border-radius: 30px;
-    padding: 2rem 1rem 2rem 1rem;
-    position: relative;
+  margin: 9rem 12rem 9rem 12rem;
+  height: calc(100vh - 18rem);
+  overflow: hidden;
+  background-color: #112711;
+  border-radius: 30px;
+  padding: 2rem 1rem 2rem 1rem;
+  position: relative;
 }
 
 .scrollSpace {
-    height: 100%;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .scrollSpace::-webkit-scrollbar {
-    width: 10px;
-    position: absolute;
+  width: 10px;
+  position: absolute;
 }
 
 .scrollSpace::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .scrollSpace::-webkit-scrollbar-thumb {
-    background: #313e1b;
-    border-radius: 10px;
+  background: #313e1b;
+  border-radius: 10px;
 }
 
 .exitButton {
-    padding: 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    color: #e4ecd4;
-    border-radius: 50%;
-    border-style: none;
-    background-color: #313e1b;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    top: 1rem;
-    left: 1rem;
+  padding: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  color: #e4ecd4;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #313e1b;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  top: 1rem;
+  left: 1rem;
 }
 
 .projectContainer {
-    background-color: #313e1b;
-    display: flex;
-    flex-direction: row;
-    width: 75%;
-    min-height: 22rem;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 1rem;
-    box-sizing: border-box;
+  background-color: #313e1b;
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  min-height: 22rem;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .projectImg {
-    flex: 1;
-    display: flex;
+  flex: 1;
+  display: flex;
 }
 
 .projectImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 .projectCaption {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 0 1rem 1rem 2rem;
-    gap: 0.5rem;
-    position: relative;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 1rem 1rem 2rem;
+  gap: 0.5rem;
+  position: relative;
 }
 
 .projectCaption h2 {
-    font-family: 'Unbounded';
-    font-size: 1.5rem;
-    margin: 0;
-    color: #bad095;
-    font-size: 2rem;
+  font-family: 'Unbounded';
+  font-size: 1.5rem;
+  margin: 0;
+  color: #bad095;
+  font-size: 2rem;
 }
 
 .dtContainer {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .projectCaption h3 {
-    font-family: 'Space Grotesk';
-    font-weight: normal;
-    font-style: italic;
-    margin: 0;
-    color: #718e3e;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
+  font-family: 'Space Grotesk';
+  font-weight: normal;
+  font-style: italic;
+  margin: 0;
+  color: #718e3e;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .projectCaption h4 {
-    font-family: 'Space Grotesk';
-    font-weight: normal;
-    margin: 0;
-    color: #718e3e;
-    margin-bottom: 1rem;
-    font-size: 1.25rem;
-    right: 0;
+  font-family: 'Space Grotesk';
+  font-weight: normal;
+  margin: 0;
+  color: #718e3e;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  right: 0;
 }
 
 .projectCaption p {
-    margin: 0;
-    font-size: 1rem;
-    color: #a4c171;
-    font-family: 'Space Grotesk';
-    display: -webkit-box;
-    -webkit-line-clamp: 6;
-    line-clamp: 6;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  margin: 0;
+  font-size: 1rem;
+  color: #a4c171;
+  font-family: 'Space Grotesk';
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .projectCaption a {
-    bottom: 0;
-    position: absolute;
-    right: 1rem;
-    color: #bad095;
-    text-decoration: none;
-    font-size: 1rem;
+  bottom: 0;
+  position: absolute;
+  right: 1rem;
+  color: #bad095;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /* good colours
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
 
-@media (max-width: 768px), (orientation: portrait) {
+/* Mobile / Tablet (max-width: 768px) and Portrait */
+@media (max-width: 768px),
+(orientation: portrait) {
   .pageContainer {
     margin: 5rem 1rem 2rem 1rem;
     height: calc(100vh - 7rem);
@@ -169,12 +171,12 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
     min-height: unset;
     flex-shrink: 0;
   }
-  
+
   .projectImg {
     height: auto;
     aspect-ratio: 16/9;
   }
-  
+
   .dtContainer {
     flex-direction: column;
     align-items: flex-start;
@@ -193,6 +195,7 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
   }
 }
 
+/* Small Mobile (max-width: 768px and max-height: 700px) */
 @media (max-width: 768px) and (max-height: 700px) {
   .projectCaption p {
     -webkit-line-clamp: 3;
@@ -200,12 +203,18 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
   }
 }
 
+/* Horizontal Mobile (max-height: 600px) */
 @media (max-height: 600px) {
+  .title {
+    margin: 1rem 3rem;
+  }
+
   .pageContainer {
     margin: 4rem 2rem 1rem 2rem;
     height: calc(100dvh - 5rem);
     box-sizing: border-box;
   }
+
   .projectContainer {
     width: 95%;
   }

@@ -145,6 +145,7 @@
 /* good colours
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
 
+/* Mobile / Tablet (max-width: 768px) and Portrait */
 @media (max-width: 768px), (orientation: portrait) {
     .pageContainer {
         margin: 5rem 1rem 2rem 1rem;
@@ -183,6 +184,7 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
     }
 }
 
+/* Small Mobile (max-width: 768px and max-height: 700px) */
 @media (max-width: 768px) and (max-height: 700px) {
     .projectCaption p {
         -webkit-line-clamp: 3;
@@ -190,7 +192,12 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
     }
 }
 
+/* Horizontal Mobile (max-height: 600px) */
 @media (max-height: 600px) {
+    .title {
+        margin: 1rem 3rem;
+    }
+
     .pageContainer {
         margin: 4rem 2rem 1rem 2rem;
         height: calc(100dvh - 5rem);

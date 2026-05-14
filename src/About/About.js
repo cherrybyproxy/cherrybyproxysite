@@ -43,7 +43,7 @@ export default function About() {
       e.preventDefault()
       const currentY = e.touches[0].clientY
       const deltaY = touchStartY - currentY
-      
+
       updateProgress(deltaY)
       touchStartY = currentY
     }
