@@ -60,3 +60,15 @@ html, body {
   .camera {
     z-index: 1;
   }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin-bottom: 6rem;
+  }
+  
+  .text {
+    font-size: clamp(1.2rem, 5vw, 1.5rem);
+    margin-top: 10rem;
+  }
+}

@@ -5,21 +5,21 @@ import CIBC from './CIBCImage.jpg'
 import FRC from './FRCDriveTeamImage.jpg'
 import TSP from './TSPImage.png'
 
-export default function Experience () {
+export default function Experience() {
     return (
         <>
-            <div className = {styles.pageContainer}>
-                <ExitButton/>
-                <div className = {styles.scrollSpace}>
-                    <p className = {styles.title}>EXPERIENCE</p>
+            <div className={styles.pageContainer}>
+                <ExitButton />
+                <div className={styles.scrollSpace}>
+                    <p className={styles.title}>EXPERIENCE</p>
 
-                    <div className = {styles.projectContainer}>
-                        <div className = {styles.projectImg}>
-                            <img src = {CIBC} alt = "CIBC"></img>
+                    <div className={styles.projectContainer}>
+                        <div className={styles.projectImg}>
+                            <img src={CIBC} alt="CIBC"></img>
                         </div>
-                        <div className = {styles.projectCaption}>
+                        <div className={styles.projectCaption}>
                             <h2>Canadian Imperial Bank of Commerce</h2>
-                            <div className = {styles.dtContainer}>
+                            <div className={styles.dtContainer}>
                                 <h3>App / Software Developer</h3>
                                 <h4>May 2025 - Aug 2025</h4>
                             </div>
@@ -27,13 +27,13 @@ export default function Experience () {
                         </div>
                     </div>
 
-                    <div className = {styles.projectContainer}>
-                        <div className = {styles.projectImg}>
-                            <img src = {FRC} alt = "FRC"></img>
+                    <div className={styles.projectContainer}>
+                        <div className={styles.projectImg}>
+                            <img src={FRC} alt="FRC"></img>
                         </div>
-                        <div className = {styles.projectCaption}>
+                        <div className={styles.projectCaption}>
                             <h2>First Robotics Competition 8574</h2>
-                            <div className = {styles.dtContainer}>
+                            <div className={styles.dtContainer}>
                                 <h3>Electrical Lead</h3>
                                 <h4>Jun 2023 - Jun 2024</h4>
                             </div>
@@ -41,13 +41,13 @@ export default function Experience () {
                         </div>
                     </div>
 
-                    <div className = {styles.projectContainer}>
-                        <div className = {styles.projectImg}>
-                            <img src = {TSP} alt = "TSP"></img>
+                    <div className={styles.projectContainer}>
+                        <div className={styles.projectImg}>
+                            <img src={TSP} alt="TSP"></img>
                         </div>
-                        <div className = {styles.projectCaption}>
+                        <div className={styles.projectCaption}>
                             <h2>The STEAM Project</h2>
-                            <div className = {styles.dtContainer}>
+                            <div className={styles.dtContainer}>
                                 <h3>Assistant Instructor</h3>
                                 <h4>Oct 2023 - Dec 2023</h4>
                             </div>
@@ -55,7 +55,7 @@ export default function Experience () {
                         </div>
                     </div>
 
-            
+
                 </div>
             </div>
         </>
@@ -68,6 +68,6 @@ function ExitButton() {
         navigate('/home');
     }
     return (
-        <button onClick = {click} className = {styles.exitButton}>X</button>
+        <button onClick={click} className={styles.exitButton}>X</button>
     )
 }

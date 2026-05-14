@@ -9,13 +9,13 @@
 .text {
     color: white;
     font-size: clamp(0.75rem, 1.5vw, 1.5rem);
-    font-family:'Space Grotesk';
+    font-family: 'Space Grotesk';
 }
 
 .pageContainer {
     margin: 9rem 12rem 9rem 12rem;
     height: calc(100vh - 18rem);
-    overflow:hidden;
+    overflow: hidden;
     background-color: #112711;
     border-radius: 30px;
     padding: 2rem 1rem 2rem 1rem;
@@ -135,7 +135,69 @@
     font-size: 1rem;
     color: #a4c171;
     font-family: 'Space Grotesk';
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* good colours
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
+
+@media (max-width: 768px), (orientation: portrait) {
+    .pageContainer {
+        margin: 5rem 1rem 2rem 1rem;
+        height: calc(100vh - 7rem);
+        height: calc(100dvh - 7rem);
+        box-sizing: border-box;
+    }
+
+    .projectContainer {
+        width: 95%;
+        flex-direction: column;
+        min-height: unset;
+        flex-shrink: 0;
+    }
+
+    .projectImg {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .dtContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projectCaption {
+        padding: 1.5rem 1rem 2.5rem 1rem;
+    }
+
+    .projectCaption p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 768px) and (max-height: 700px) {
+    .projectCaption p {
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+    }
+}
+
+@media (max-height: 600px) {
+    .pageContainer {
+        margin: 4rem 2rem 1rem 2rem;
+        height: calc(100dvh - 5rem);
+        box-sizing: border-box;
+    }
+
+    .projectContainer {
+        width: 95%;
+    }
+}
