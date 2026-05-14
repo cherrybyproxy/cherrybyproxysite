@@ -10,13 +10,12 @@ export default function About() {
   useEffect(() => {
     let scrollAmount = 0
     const maxScrollAmount = 500 // Total scroll needed to complete zoom
+    let touchStartY = 0
 
-    const handleWheel = (e) => {
-      e.preventDefault()
-
+    const updateProgress = (delta) => {
       // Only increase zoom, don't allow scrolling back
-      if (e.deltaY > 0) {
-        scrollAmount += e.deltaY
+      if (delta > 0) {
+        scrollAmount += delta
       }
 
       // Calculate progress (0 to 1)
@@ -31,11 +30,33 @@ export default function About() {
       }
     }
 
-    // Add wheel listener to the window
+    const handleWheel = (e) => {
+      e.preventDefault()
+      updateProgress(e.deltaY)
+    }
+
+    const handleTouchStart = (e) => {
+      touchStartY = e.touches[0].clientY
+    }
+
+    const handleTouchMove = (e) => {
+      e.preventDefault()
+      const currentY = e.touches[0].clientY
+      const deltaY = touchStartY - currentY
+      
+      updateProgress(deltaY)
+      touchStartY = currentY
+    }
+
+    // Add listeners to the window
     window.addEventListener('wheel', handleWheel, { passive: false })
+    window.addEventListener('touchstart', handleTouchStart, { passive: false })
+    window.addEventListener('touchmove', handleTouchMove, { passive: false })
 
     return () => {
       window.removeEventListener('wheel', handleWheel)
+      window.removeEventListener('touchstart', handleTouchStart)
+      window.removeEventListener('touchmove', handleTouchMove)
     }
   }, [navigate])
 
