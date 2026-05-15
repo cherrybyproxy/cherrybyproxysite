@@ -133,6 +133,10 @@ a {
     gap: 2rem;
     justify-content: center;
   }
+
+  .profile {
+    height: 10rem;
+  }
 }
 
 /* Horizontal Mobile (max-height: 600px) */
