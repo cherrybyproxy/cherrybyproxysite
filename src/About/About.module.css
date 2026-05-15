@@ -113,6 +113,8 @@ a {
   .title {
     margin-top: 5rem;
     margin-bottom: 2rem;
+    text-align: center;
+    word-break: break-word;
   }
 
   .bioContainer {
