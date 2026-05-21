@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import CIBC from './CIBCImage.jpg'
 import FRC from './FRCDriveTeamImage.jpg'
 import TSP from './TSPImage.png'
+import Versaterm from './Versaterm Logo.jpg'
 
 export default function Experience() {
     return (
@@ -12,6 +13,20 @@ export default function Experience() {
                 <ExitButton />
                 <div className={styles.scrollSpace}>
                     <p className={styles.title}>EXPERIENCE</p>
+
+                    <div className={styles.projectContainer}>
+                        <div className={styles.projectImg}>
+                            <img src={Versaterm} alt="Versaterm"></img>
+                        </div>
+                        <div className={styles.projectCaption}>
+                            <h2>Versaterm</h2>
+                            <div className={styles.dtContainer}>
+                                <h3>Fullstack Developer</h3>
+                                <h4>Jan 2026 - Apr 2026</h4>
+                            </div>
+                            <p>Developed and shipped features across the full stack for enterprise public safety platforms used by 950+ agencies worldwide, working in Java, Spring Boot, and Vue.js. Designed and integrated an Authorized Representatives system with multi-layered access control, including 2FA, JWT authentication, tiered read-only permissions, and contact-based identity recovery. Also built a Case Notes module with rich text editing, privacy controls, and multi-format export, and delivered 10+ additional enhancements spanning database migrations, dynamic report querying, state management, and media streaming.</p>
+                        </div>
+                    </div>
 
                     <div className={styles.projectContainer}>
                         <div className={styles.projectImg}>
