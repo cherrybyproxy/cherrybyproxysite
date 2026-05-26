@@ -4,6 +4,7 @@ import Carousel from './Carousel.js'
 
 import VB from './AthleticsImages/VolleyballImage.jpg'
 import Yoga from './AthleticsImages/YogaImage.jpg'
+import Boulder from './AthleticsImages/BoulderingImage.jpg'
 
 import BigRat from './CrochetImages/BigRatImage.heic'
 import Bouquet from './CrochetImages/BouquetImage.heic'
@@ -35,8 +36,8 @@ import Duck from './CADImages/DuckImage.heic'
 import Block from './CADImages/BlockImage.heic'
 import Otter from './CADImages/OtterImage.jpg'
 
-export default function Beyond () {
-    const carouselimg1 = [VB, Yoga];
+export default function Beyond() {
+    const carouselimg1 = [VB, Boulder, Yoga];
     const carouselimg2 = [BigRat, Bouquet, SmallRat, Skirt, Bunny];
     const carouselimg3 = [ShinyKey, Monkey, Cat, Fish, Gift, RatBunny, Shell, Keychain, Teeth];
     const carouselimg4 = [Matcha, Brownie, Bun, Carrot, Cinna, Heart, Mochi, Muffin, Raspberry];
@@ -44,37 +45,37 @@ export default function Beyond () {
 
     return (
         <>
-            <div className = {styles.pageContainer}>
-                <ExitButton/>
-                <div className = {styles.scrollSpace}>
-                    <h1 className = {styles.title}>BEYOND</h1>
+            <div className={styles.pageContainer}>
+                <ExitButton />
+                <div className={styles.scrollSpace}>
+                    <h1 className={styles.title}>BEYOND</h1>
 
-                    <div className = {styles.triContainer}>
-                        <div className = {styles.hobbyContainer}>
-                            <div className = {styles.projectImg}>
-                                <Carousel images = {carouselimg1}/>
+                    <div className={styles.triContainer}>
+                        <div className={styles.hobbyContainer}>
+                            <div className={styles.projectImg}>
+                                <Carousel images={carouselimg1} />
                             </div>
-                            <div className = {styles.projectCaption}>
+                            <div className={styles.projectCaption}>
                                 <h2>Athletics</h2>
-                                <p>I enjoy playing volleyball and tennis. You'll also find me at the gym in the mornings.</p>
+                                <p>I'm a gym rat! I enjoy playing volleyball and tennis, and I've also recently picked up bouldering.</p>
                             </div>
                         </div>
 
-                        <div className = {styles.hobbyContainer}>
-                            <div className = {styles.projectImg}>
-                                <Carousel images = {carouselimg2}/>
+                        <div className={styles.hobbyContainer}>
+                            <div className={styles.projectImg}>
+                                <Carousel images={carouselimg2} />
                             </div>
-                            <div className = {styles.projectCaption}>
+                            <div className={styles.projectCaption}>
                                 <h2>Crochet</h2>
-                                <p>I make anything from plushies to tiered skirts. WIP: 2 big rats for cool people.</p>
+                                <p>I make anything from plushies to tiered skirts. WIP: 1 big rat for a cool person.</p>
                             </div>
                         </div>
 
-                        <div className = {styles.hobbyContainer}>
-                            <div className = {styles.projectImg}>
-                                <Carousel images = {carouselimg3}/>
+                        <div className={styles.hobbyContainer}>
+                            <div className={styles.projectImg}>
+                                <Carousel images={carouselimg3} />
                             </div>
-                            <div className = {styles.projectCaption}>
+                            <div className={styles.projectCaption}>
                                 <h2>Clay Art</h2>
                                 <p>I love customizing my jewelry and creating figurines.</p>
                             </div>
@@ -82,22 +83,22 @@ export default function Beyond () {
 
                     </div>
 
-                    <div className = {styles.triContainer}>
-                        <div className = {styles.hobbyContainer}>
-                            <div className = {styles.projectImg}>
-                                <Carousel images = {carouselimg4}/>
+                    <div className={styles.triContainer}>
+                        <div className={styles.hobbyContainer}>
+                            <div className={styles.projectImg}>
+                                <Carousel images={carouselimg4} />
                             </div>
-                            <div className = {styles.projectCaption}>
+                            <div className={styles.projectCaption}>
                                 <h2>Baking</h2>
                                 <p>I can't cook...</p>
                             </div>
                         </div>
 
-                        <div className = {styles.hobbyContainer}>
-                            <div className = {styles.projectImg}>
-                                <Carousel images = {carouselimg5}/>
+                        <div className={styles.hobbyContainer}>
+                            <div className={styles.projectImg}>
+                                <Carousel images={carouselimg5} />
                             </div>
-                            <div className = {styles.projectCaption}>
+                            <div className={styles.projectCaption}>
                                 <h2>CAD</h2>
                                 <p>I am a Fusion360 fan. Trying to learn how to use KiCAD.</p>
                             </div>
@@ -117,6 +118,6 @@ function ExitButton() {
         navigate('/home');
     }
     return (
-        <button onClick = {click} className = {styles.exitButton}>X</button>
+        <button onClick={click} className={styles.exitButton}>X</button>
     )
 }
