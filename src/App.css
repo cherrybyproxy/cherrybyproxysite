@@ -53,7 +53,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
     padding: 0;
     overflow: hidden;
-    background: url('./CabinInterior.PNG');
+    background: url('./CabinInterior.webp');
     background-size: cover;
 }
 

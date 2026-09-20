@@ -1,10 +1,10 @@
 import styles from './Experience.module.css'
 import { useNavigate } from 'react-router-dom'
 
-import CIBC from './CIBCImage.jpg'
-import FRC from './FRCDriveTeamImage.jpg'
-import TSP from './TSPImage.png'
-import Versaterm from './Versaterm Logo.jpg'
+import CIBC from './CIBCImage.webp'
+import FRC from './FRCDriveTeamImage.webp'
+import TSP from './TSPImage.webp'
+import Versaterm from './Versaterm Logo.webp'
 
 export default function Experience() {
     return (

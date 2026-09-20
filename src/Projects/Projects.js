@@ -1,11 +1,11 @@
 import styles from './Projects.module.css'
 import { useNavigate } from 'react-router-dom'
 
-import UoMe from './UoMeImage.png'
-import WAM from './WatAMomentImage.jpg'
-import MMC from './MathClubImage.png'
-import BIC from './BICImage.png'
-import LaTalk from './LaTalkImage.png'
+import UoMe from './UoMeImage.webp'
+import WAM from './WatAMomentImage.webp'
+import MMC from './MathClubImage.webp'
+import BIC from './BICImage.webp'
+import LaTalk from './LaTalkImage.webp'
 
 export default function Projects () {
     return (

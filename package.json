@@ -12,6 +12,9 @@
     "web-vitals": "^3.5.2"
   },
   "scripts": {
+    "convert-images": "CWEBP=$(command -v cwebp || echo '') && [ -z \"$CWEBP\" ] && echo 'cwebp not found, skipping conversion' || find src -type f \\( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' \\) | while read f; do out=\"${f%.*}.webp\"; [ -f \"$out\" ] || $CWEBP -q 80 \"$f\" -o \"$out\" 2>/dev/null && echo \"Converted: $f\"; done",
+    "prestart": "npm run convert-images",
+    "prebuild": "npm run convert-images",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

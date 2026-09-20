@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import ImageButton from './ImageButton';
-import Ram from './RamHead.PNG';
-import Bag from './Bag.PNG';
-import Book from './Book.PNG';
-import Camera from './Camera.PNG';
+import Ram from './RamHead.webp';
+import Bag from './Bag.webp';
+import Book from './Book.webp';
+import Camera from './Camera.webp';
 import styles from './Home.module.css';
 
 export default function Home() {

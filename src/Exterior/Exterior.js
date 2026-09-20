@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import styles from './Exterior.module.css'
-import cabinExterior from './CabinExterior.jpg'
+import cabinExterior from './CabinExterior.webp'
 
 export default function Exterior() {
   const [zoomProgress, setZoomProgress] = useState(0)
