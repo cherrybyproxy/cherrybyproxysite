@@ -26,7 +26,7 @@ export default function Projects() {
                                 <h3>TypeScript, React, MediaPipe, NestJS, PostgreSQL</h3>
                                 <h4>Aug 2026</h4>
                             </div>
-                            <p>Pocket Physio is a web-based physical therapy tool that tracks joint angles during exercises like heel slides using MediaPipe's client-side pose estimation. Testing floor-plane movements quickly surfaced the depth ambiguity limits of monocular webcams. To tackle 3D spatial awareness and camera anchoring more rigorously, I am currently building a SLAM pipeline before expanding the exercise catalog.</p>
+                            <p>Pocket Physio is a web-based physical therapy platform that tracks joint angles and exercise biomechanics entirely in the browser. Powered by client-side MediaPipe pose estimation, it measures real-time range of motion, rep counts, movement tempo, and trunk lean to provide color-coded clinical feedback during rehabilitation. It logs session history and adherence metrics, and I am currently hardening edge-case tracking with OpenCV optical flow to handle self-occlusions during floor exercises.</p>
                             <a href="https://github.com/cherrybyproxy/pocket-physio" target="_blank" rel="noreferrer">GitHub</a>
                         </div>
                     </div>
