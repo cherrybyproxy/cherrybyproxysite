@@ -88,7 +88,7 @@ export default function About() {
           </div>
           <img className={styles.profile} src={Profile} alt="Profile"></img>
         </div>
-        <p className={styles.text2}>Continue scrolling.</p>
+        <p className={styles.text2}>Continue scrolling...</p>
       </div>
       <div className={styles.scrollTracker}>
         Progress: {(zoomProgress * 100).toFixed(0)}%
