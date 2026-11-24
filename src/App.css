@@ -51,10 +51,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    padding: 0;
-    overflow: hidden;
-    background: url('./CabinInterior.webp');
-    background-size: cover;
+  padding: 0;
+  overflow: hidden;
+  background: url('./CabinInterior.webp') center / cover no-repeat;
 }
 
 code {

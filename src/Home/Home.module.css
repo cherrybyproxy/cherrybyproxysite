@@ -1,65 +1,133 @@
 html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .pageContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-  
-  .title {
-    color: white;
-    font-size: clamp(3rem, 5vw, 5rem);
-    margin-bottom: 12rem;
-    font-family: 'Unbounded';
-  }
-  
-  .text {
-    color: white;
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-    font-family: 'Shadows into Light';
-    margin-top: 20rem;
-    position: relative;
-    z-index: 100;
-    pointer-events: none;
-  }
-  
-  .buttonCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    opacity: 0;
-  }
-  
-  .ram {
-    z-index: 4;
-  }
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .bag {
-    z-index: 3;
+/* full-screen page container */
+.pageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* base cabin interior image centered and scaled to cover */
+.sceneBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* organic shape overlay with soft navy blue ambient glow */
+.shapeLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.7;
+  transform: translateZ(0);
+  will-change: opacity, filter;
+  /* soft navy blue highlight hugging organic contours */
+  filter: drop-shadow(0 0 5px rgba(70, 120, 190, 0.85))
+          drop-shadow(0 0 12px rgba(25, 65, 140, 0.75))
+          drop-shadow(0 0 20px rgba(12, 35, 90, 0.5));
+  transition: opacity 0.25s ease, filter 0.25s ease;
+  animation: gentleBreathe 3.5s ease-in-out infinite alternate;
+}
+
+/* smooth breathing animation using opacity for 60fps GPU performance */
+@keyframes gentleBreathe {
+  0% {
+    opacity: 0.5;
   }
-  
-  .book {
-    z-index: 2;
+  100% {
+    opacity: 0.85;
   }
-  
-  .camera {
-    z-index: 1;
-  }
+}
+
+/* expanded navy blue bloom when shape is hovered */
+.shapeHovered {
+  opacity: 1 !important;
+  animation: none !important;
+  filter: drop-shadow(0 0 6px rgba(100, 160, 245, 0.95))
+          drop-shadow(0 0 14px rgba(45, 100, 195, 0.9))
+          drop-shadow(0 0 24px rgba(20, 60, 140, 0.8))
+          drop-shadow(0 0 36px rgba(10, 30, 85, 0.5))
+          brightness(1.05) !important;
+}
+
+/* layer z-indexes to preserve visual depth */
+.ram {
+  z-index: 4;
+}
+
+.bag {
+  z-index: 3;
+}
+
+.book {
+  z-index: 2;
+}
+
+.camera {
+  z-index: 1;
+}
+
+.title {
+  color: white;
+  font-size: clamp(3rem, 5vw, 5rem);
+  margin-bottom: 12rem;
+  font-family: 'Unbounded';
+  z-index: 10;
+  pointer-events: none;
+}
+
+.text {
+  color: white;
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  font-family: 'Shadows into Light';
+  margin-top: 20rem;
+  position: relative;
+  z-index: 100;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* hide helper buttons visually while keeping screen-reader accessibility */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 @media (max-width: 768px) {
   .title {
