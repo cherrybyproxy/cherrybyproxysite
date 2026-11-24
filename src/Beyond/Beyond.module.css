@@ -199,8 +199,9 @@
   transform: scale(1.2);
 }
 
-/* Mobile / Tablet (max-width: 768px) */
-@media (max-width: 768px) {
+/* mobile / tablet (max-width: 768px) and portrait */
+@media (max-width: 768px),
+(orientation: portrait) {
   .pageContainer {
     margin: 5rem 1rem 2rem 1rem;
     height: calc(100vh - 7rem);
@@ -212,37 +213,36 @@
     flex-direction: column;
     width: 95%;
     align-items: center;
+    gap: 2rem;
   }
 
   .hobbyContainer {
     max-width: 100%;
     width: 100%;
+    height: auto;
+    min-height: unset;
     flex-shrink: 0;
   }
 
+  /* match experience modal 16:9 aspect ratio image */
   .projectImg {
+    width: 100%;
     height: auto;
-    aspect-ratio: 1/1;
+    aspect-ratio: 16/9;
   }
 
+  .projectCaption {
+    padding: 1.5rem 1rem 1.5rem 1rem;
+  }
+
+  /* allow text to display fully and expand container rather than truncating with ellipsis */
   .projectCaption p {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    display: block;
+    overflow: visible;
   }
 }
 
-/* Small Mobile (max-width: 768px and max-height: 700px) */
-@media (max-width: 768px) and (max-height: 700px) {
-  .projectCaption p {
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-  }
-}
-
-/* Horizontal Mobile (max-height: 600px) */
+/* horizontal mobile (max-height: 600px) */
 @media (max-height: 600px) {
   .title {
     margin: 1rem 3rem;
@@ -256,32 +256,5 @@
 
   .triContainer {
     width: 95%;
-  }
-}
-
-/* Portrait Mobile / Tablet */
-@media (orientation: portrait) {
-  .pageContainer {
-    margin: 5rem 1rem 2rem 1rem;
-    height: calc(100vh - 7rem);
-    height: calc(100dvh - 7rem);
-    box-sizing: border-box;
-  }
-
-  .triContainer {
-    flex-direction: column;
-    width: 95%;
-    align-items: center;
-  }
-
-  .hobbyContainer {
-    max-width: 100%;
-    width: 100%;
-    flex-shrink: 0;
-  }
-
-  .projectImg {
-    height: auto;
-    aspect-ratio: 1/1;
   }
 }

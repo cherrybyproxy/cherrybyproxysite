@@ -150,7 +150,7 @@
 /* good colours
 https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fdark-olive-green&psig=AOvVaw3C46PoteiDyqlwgmBN6nNB&ust=1757107467557000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCJCn2cWFwI8DFQAAAAAdAAAAABAL*/
 
-/* Mobile / Tablet (max-width: 768px) and Portrait */
+/* mobile / tablet (max-width: 768px) and portrait */
 @media (max-width: 768px),
 (orientation: portrait) {
   .pageContainer {
@@ -164,10 +164,12 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
     width: 95%;
     flex-direction: column;
     min-height: unset;
+    height: auto;
     flex-shrink: 0;
   }
 
   .projectImg {
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
   }
@@ -178,27 +180,24 @@ https://www.google.com/url?sa=i&url=https%3A%2F%2Ficolorpalette.com%2Fcolor%2Fda
   }
 
   .projectCaption {
-    padding: 1.5rem 1rem 2.5rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
   }
 
+  /* allow text to display fully and expand container rather than truncating with ellipsis */
   .projectCaption p {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    display: block;
+    overflow: visible;
+  }
+
+  /* keep github link in flow below text so it never overlaps */
+  .projectCaption a {
+    position: static;
+    align-self: flex-end;
+    margin-top: 1rem;
   }
 }
 
-/* Small Mobile (max-width: 768px and max-height: 700px) */
-@media (max-width: 768px) and (max-height: 700px) {
-  .projectCaption p {
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
-  }
-}
-
-/* Horizontal Mobile (max-height: 600px) */
+/* horizontal mobile (max-height: 600px) */
 @media (max-height: 600px) {
   .title {
     margin: 1rem 3rem;
