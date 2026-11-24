@@ -77,14 +77,14 @@ export default function About() {
         <p className={styles.title}>Hey, I'm Leah! &nbsp; ཐི^.  ̞.^ཋྀ</p>
         <div className={styles.bioContainer}>
           <div className={styles.textContainer}>
-            <p className={styles.text}>I'm a 2B Software Engineering student at the University of Waterloo.</p>
+            <p className={styles.text}>I'm a (rising) 3A Software Engineering student at the University of Waterloo.</p>
             <p className={styles.text}>Let's connect!</p>
             <div className={styles.linkContainer}>
               <a href="https://github.com/cherrybyproxy" target="_blank" rel="noopener noreferrer">[GITHUB]</a>
               <a href="https://www.linkedin.com/in/leah06/" target="_blank" rel="noopener noreferrer">[LINKEDIN]</a>
               <a href="mailto:leah960319@gmail.com">[EMAIL]</a>
             </div>
-            <p className={styles.text3}>♬ˎˊ˗ Lucy Bedroque - BYOB</p>
+            <p className={styles.text3}>♬ˎˊ˗ Lucy Bedroque - STONE IN FOCUS</p>
           </div>
           <img className={styles.profile} src={Profile} alt="Profile"></img>
         </div>
