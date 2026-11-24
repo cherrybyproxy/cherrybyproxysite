@@ -74,7 +74,9 @@ export default function About() {
           opacity: 1 - zoomProgress,
         }}
       >
-        <p className={styles.title}>Hey, I'm Leah! &nbsp; ཐི^.  ̞.^ཋྀ</p>
+        <p className={styles.title}>
+          Hey, I'm Leah! <span className={styles.emoticon}>ཐི^.  ̞.^ཋྀ</span>
+        </p>
         <div className={styles.bioContainer}>
           <div className={styles.textContainer}>
             <p className={styles.text}>I'm a (rising) 3A Software Engineering student at the University of Waterloo.</p>
