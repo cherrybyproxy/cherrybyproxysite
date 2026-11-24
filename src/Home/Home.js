@@ -37,33 +37,55 @@ export default function Home() {
     const containerHeight = rect.height;
     if (!containerWidth || !containerHeight) return null;
 
-    const containerRatio = containerWidth / containerHeight;
+    // check if viewport is in vertical orientation
+    const isVertical = containerHeight > containerWidth;
+
+    // determine scene coordinate space (dimensions swap when rotated 90deg)
+    const sceneWidth = isVertical ? containerHeight : containerWidth;
+    const sceneHeight = isVertical ? containerWidth : containerHeight;
+
+    const sceneRatio = sceneWidth / sceneHeight;
     let scale;
     let offsetX;
     let offsetY;
 
-    // scale and center image preserving aspect ratio (matches CSS object-fit: cover)
-    if (containerRatio > IMAGE_RATIO) {
-      // wide screens: scale to fit width, letterbox top and bottom
-      scale = containerWidth / IMAGE_WIDTH;
+    // scale and position image preserving aspect ratio (matches CSS object-fit: cover)
+    if (sceneRatio > IMAGE_RATIO) {
+      // wide scene: scale to fit width
+      scale = sceneWidth / IMAGE_WIDTH;
       const renderedHeight = IMAGE_HEIGHT * scale;
       offsetX = 0;
-      offsetY = (containerHeight - renderedHeight) / 2;
+      // in vertical rotated scene, top aligns with right edge of viewport
+      offsetY = isVertical ? 0 : (sceneHeight - renderedHeight) / 2;
     } else {
-      // tall screens: scale to fit height, letterbox left and right
-      scale = containerHeight / IMAGE_HEIGHT;
+      // tall scene: scale to fit height, anchor to right and cut off from left
+      scale = sceneHeight / IMAGE_HEIGHT;
       const renderedWidth = IMAGE_WIDTH * scale;
-      offsetX = (containerWidth - renderedWidth) / 2;
+      offsetX = sceneWidth - renderedWidth;
       offsetY = 0;
     }
 
-    // set viewport coordinates relative to container
+    // set coordinates relative to container
     const mouseX = clientX - rect.left;
     const mouseY = clientY - rect.top;
 
-    // map container click back to original 1280x720 source pixel
-    const imgX = Math.floor((mouseX - offsetX) / scale);
-    const imgY = Math.floor((mouseY - offsetY) / scale);
+    let localX;
+    let localY;
+
+    if (isVertical) {
+      // inverse transform for 90deg clockwise rotation around container center
+      const dx = mouseX - containerWidth / 2;
+      const dy = mouseY - containerHeight / 2;
+      localX = sceneWidth / 2 + dy;
+      localY = sceneHeight / 2 - dx;
+    } else {
+      localX = mouseX;
+      localY = mouseY;
+    }
+
+    // map scene coordinates back to original 1280x720 source pixel
+    const imgX = Math.floor((localX - offsetX) / scale);
+    const imgY = Math.floor((localY - offsetY) / scale);
 
     // return null if click falls outside source image boundary
     if (imgX < 0 || imgX >= IMAGE_WIDTH || imgY < 0 || imgY >= IMAGE_HEIGHT) {
@@ -141,29 +163,32 @@ export default function Home() {
       onTouchStart={handleTouchStart}
       style={{ cursor: hoveredShape ? 'pointer' : 'default' }}
     >
-      {/* background cabin interior layer */}
-      <img
-        src={CabinInterior}
-        alt="Cabin Interior"
-        className={styles.sceneBg}
-        draggable={false}
-      />
+      {/* rotating scene wrapper for vertical viewports */}
+      <div className={styles.sceneContainer}>
+        {/* background cabin interior layer */}
+        <img
+          src={CabinInterior}
+          alt="Cabin Interior"
+          className={styles.sceneBg}
+          draggable={false}
+        />
 
-      {/* organic shape layers with navy blue contour glow */}
-      {SHAPES.map((shape) => {
-        const isHovered = hoveredShape === shape.id;
-        return (
-          <img
-            key={shape.id}
-            src={shape.src}
-            alt={shape.name}
-            className={`${styles.shapeLayer} ${shape.className} ${
-              isHovered ? styles.shapeHovered : ''
-            }`}
-            draggable={false}
-          />
-        );
-      })}
+        {/* organic shape layers with navy blue contour glow */}
+        {SHAPES.map((shape) => {
+          const isHovered = hoveredShape === shape.id;
+          return (
+            <img
+              key={shape.id}
+              src={shape.src}
+              alt={shape.name}
+              className={`${styles.shapeLayer} ${shape.className} ${
+                isHovered ? styles.shapeHovered : ''
+              }`}
+              draggable={false}
+            />
+          );
+        })}
+      </div>
 
       <p className={styles.text}>Click to explore.</p>
 

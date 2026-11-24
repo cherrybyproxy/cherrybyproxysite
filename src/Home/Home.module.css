@@ -21,7 +21,20 @@ html, body {
   box-sizing: border-box;
 }
 
-/* base cabin interior image centered and scaled to cover */
+/* scene container holding background and shapes, rotates in vertical viewports */
+.sceneContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+  transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
+}
+
+/* base cabin interior image right justified and scaled to cover */
 .sceneBg {
   position: absolute;
   top: 0;
@@ -29,7 +42,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   pointer-events: none;
   user-select: none;
   z-index: 0;
@@ -43,7 +56,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   pointer-events: none;
   user-select: none;
   opacity: 0.7;
@@ -129,6 +142,33 @@ html, body {
   border: 0;
 }
 
+/* rotate cabin scene 90deg in vertical viewports while keeping text and navbar upright */
+@media (orientation: portrait), (max-aspect-ratio: 1/1) {
+  .sceneContainer {
+    top: 50%;
+    left: 50%;
+    width: 100vh;
+    width: 100dvh;
+    height: 100vw;
+    height: 100dvw;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  /* right justify cabin scene on vertical screen (cut off from left of viewport) */
+  .sceneBg,
+  .shapeLayer {
+    object-position: right top;
+  }
+
+  .text {
+    margin-top: auto;
+    margin-bottom: 3.5rem;
+    align-self: flex-end;
+    margin-right: 2rem;
+    text-align: right;
+  }
+}
+
 @media (max-width: 768px) {
   .title {
     font-size: clamp(2rem, 8vw, 3rem);
@@ -137,6 +177,5 @@ html, body {
   
   .text {
     font-size: clamp(1.2rem, 5vw, 1.5rem);
-    margin-top: 10rem;
   }
 }
