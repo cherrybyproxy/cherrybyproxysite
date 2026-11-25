@@ -173,7 +173,7 @@ export default function Home() {
           draggable={false}
         />
 
-        {/* organic shape layers with navy blue contour glow */}
+        {/* organic shape layers with white contour glow */}
         {SHAPES.map((shape) => {
           const isHovered = hoveredShape === shape.id;
           return (
