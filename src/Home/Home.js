@@ -5,6 +5,8 @@ import Ram from './RamHead.webp';
 import Bag from './Bag.webp';
 import Book from './Book.webp';
 import Camera from './Camera.webp';
+import SoccerBall from './SoccerBall.webp';
+import SoccerBallPng from './SoccerBall.png';
 import { isPointInShape } from './shapeMasks';
 import styles from './Home.module.css';
 
@@ -161,7 +163,11 @@ export default function Home() {
       onMouseLeave={handleMouseLeave}
       onClick={handleClick}
       onTouchStart={handleTouchStart}
-      style={{ cursor: hoveredShape ? 'pointer' : 'default' }}
+      style={{
+        cursor: `url(${SoccerBall}) 16 16, url(${SoccerBallPng}) 16 16, ${
+          hoveredShape ? 'pointer' : 'default'
+        }`,
+      }}
     >
       {/* rotating scene wrapper for vertical viewports */}
       <div className={styles.sceneContainer}>

@@ -37,6 +37,16 @@
   }
 }
 
+/* site-wide custom soccer ball cursor */
+html, body, *, *::before, *::after {
+  cursor: url('./Home/SoccerBall.webp') 16 16, url('./Home/SoccerBall.png') 16 16, auto;
+}
+
+/* clickable elements maintain custom cursor with pointer fallback */
+a, button, [role="button"], input[type="submit"], input[type="button"], select {
+  cursor: url('./Home/SoccerBall.webp') 16 16, url('./Home/SoccerBall.png') 16 16, pointer;
+}
+
 html, body {
   height: 100%;
   width: 100%;

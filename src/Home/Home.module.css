@@ -19,6 +19,8 @@ html, body {
   text-align: center;
   padding: 1rem;
   box-sizing: border-box;
+  /* custom soccer ball cursor centered on hotspot */
+  cursor: url('./SoccerBall.webp') 16 16, url('./SoccerBall.png') 16 16, default;
 }
 
 /* scene container holding background and shapes, rotates in vertical viewports */
